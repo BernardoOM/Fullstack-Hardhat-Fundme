@@ -1,2 +1,2 @@
-1. HTML/Javascript
-   Later on, we will use Nextjs/Reactjs
+#Fullstack Fund Me 
+### A decentrilized Fundme Smart Contract.
