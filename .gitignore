@@ -1,0 +1,12 @@
+node_modules
+.yarn
+
+hardhat-fund-me/.env
+hardhat-fund-me/coverage
+hardhat-fund-me/coverage.json
+hardhat-fund-me/typechain
+hardhat-fund-me/deployments
+
+#Hardhat files
+hardhat-fund-me/cache
+hardhat-fund-me/artifacts

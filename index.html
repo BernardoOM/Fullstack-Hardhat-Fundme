@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Fund Me App</title>
+    </head>
+    <body>
+        <h1>Fund me App</h1>
+        <!-- for fundme.js otra forma de hacerlo
+        <script src="./index.js" type="module"></script>
+        <button id="connectButton">Connect</button>
+        <button id="balanceButton">Balance</button>
+        <button id="withdrawButton">Withdraw</button>
+        -->
+        <!-- Si usamos la version de abajo, hay que hacer 
+            un browserfy del index.js
+            yarn browserify index.js --standalone bundle -o ./dist/bundle.js 
+        -->
+        <script src="./dist/bundle.js" type="text/javascript"></script>
+        <button id="connectButton" onclick="bundle.connect()">Connect</button>
+        <button id="balanceButton" onclick="bundle.getBalance()">
+            Balance
+        </button>
+        <button id="withdrawButton" onclick="bundle.withdraw()">Withdraw</button
+        ><br /><br />
+        <label for="fund">ETH Amount</label>
+        <input id="ethAmount" placeholder="0.1" />
+        <button id="fundButton" onclick="bundle.fund()">Fund</button>
+    </body>
+</html>
